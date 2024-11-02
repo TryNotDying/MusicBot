@@ -45,9 +45,9 @@
             <version>4.4.1_353</version>
         </dependency>
 		<dependency>
-		    <groupId>com.github.Nagami-Yukki</groupId>
-		    <artifactId>JDA-Utilities</artifactId>
-		    <version>1.0</version>
+            <groupId>com.github.JDA-Applications</groupId>
+            <artifactId>JDA-Utilities</artifactId>
+            <version>c16a4b264b</version>
 		</dependency>
 
         <!-- Music Dependencies -->
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>dev.lavalink.youtube</groupId>
             <artifactId>common</artifactId>
-            <version>1.5.2</version>
+            <version>1.8.3</version>
         </dependency>
 	<dependency>
 	    <groupId>com.github.jagrosh</groupId>

@@ -40,10 +40,10 @@ import org.json.JSONTokener;
  */
 public class OtherUtil
 {
-    public final static String NEW_VERSION_AVAILABLE = "There is a new version of JMusicBot available!\n"
+    public final static String NEW_VERSION_AVAILABLE = "There is a new version of MusicBot available!\n"
                     + "Current version: %s\n"
                     + "New Version: %s\n\n"
-                    + "Please visit https://github.com/jagrosh/MusicBot/releases/latest to get the latest release.";
+                    + "Please visit https://github.com/TryNotDying/MusicBot/releases/latest to get the latest release.";
     private final static String WINDOWS_INVALID_PATH = "c:\\windows\\system32\\";
     
     /**
@@ -171,7 +171,7 @@ public class OtherUtil
         
         if(latestVersion!=null && !latestVersion.equals(version))
         {
-            prompt.alert(Prompt.Level.WARNING, "JMusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
+            prompt.alert(Prompt.Level.WARNING, "MusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
         }
     }
     
@@ -188,7 +188,7 @@ public class OtherUtil
         try
         {
             Response response = new OkHttpClient.Builder().build()
-                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/jagrosh/MusicBot/releases/latest").build())
+                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/TryNotDying/MusicBot/releases/latest").build())
                     .execute();
             ResponseBody body = response.body();
             if(body != null)
@@ -219,7 +219,7 @@ public class OtherUtil
     public static String getUnsupportedBotReason(JDA jda) 
     {
         if (jda.getSelfUser().getFlags().contains(User.UserFlag.VERIFIED_BOT))
-            return "The bot is verified. Using JMusicBot in a verified bot is not supported.";
+            return "The bot is verified.";
 
         ApplicationInfo info = jda.retrieveApplicationInfo().complete();
         if (info.isBotPublic())
