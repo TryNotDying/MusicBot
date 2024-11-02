@@ -1,4 +1,4 @@
-<img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
+<img height="200" src="https://i.imgur.com/zrE80HY.png" title="MusicBot" width="200"/>
 
 # JMusicBot
 
